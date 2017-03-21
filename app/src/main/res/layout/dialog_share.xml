@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textColor="@color/update_action_btn_text_night">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/action_comment_text">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 分享到"
+            android:textColor="@color/update_action_btn_text_night"
+            android:textSize="27sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_bg"
+        android:padding="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_dialog_session"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/action_comment_text"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/weixin_it_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信聊天"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_bg"
+        android:padding="1dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_dialog_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/action_comment_text"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/weixin_pyq_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信朋友圈"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

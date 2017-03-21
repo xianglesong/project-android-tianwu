@@ -1,0 +1,101 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      cn.jpush.android.ui.PushActivity:
+        4175d638 xianglesong.com.twandroid/cn.jpush.android.ui.PushActivity filter 41797ba0
+      android.intent.action.MAIN:
+        422836a0 xianglesong.com.twandroid/.acitvity.SplashActivity filter 42287f88
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        424cddb8 xianglesong.com.twandroid/cn.jpush.android.service.PushReceiver filter 42aee038
+
+  Non-Data Actions:
+      cn.jpush.android.intent.NOTIFICATION_RECEIVED:
+        417145f8 xianglesong.com.twandroid/.receiver.MyJPushReceiver filter 41716be0
+      cn.jpush.android.intent.NOTIFICATION_OPENED:
+        417145f8 xianglesong.com.twandroid/.receiver.MyJPushReceiver filter 41716be0
+      android.net.conn.CONNECTIVITY_CHANGE:
+        424cddb8 xianglesong.com.twandroid/cn.jpush.android.service.PushReceiver filter 428c5af8
+      cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY:
+        424cddb8 xianglesong.com.twandroid/cn.jpush.android.service.PushReceiver filter 427ca4f8
+      cn.jpush.android.intent.REGISTRATION:
+        417145f8 xianglesong.com.twandroid/.receiver.MyJPushReceiver filter 41716be0
+      android.intent.action.USER_PRESENT:
+        424cddb8 xianglesong.com.twandroid/cn.jpush.android.service.PushReceiver filter 428c5af8
+      com.google.android.gms.measurement.UPLOAD:
+        41ab02e8 xianglesong.com.twandroid/com.google.android.gms.measurement.AppMeasurementReceiver filter 41b0ff98
+      cn.jpush.android.intent.MESSAGE_RECEIVED:
+        417145f8 xianglesong.com.twandroid/.receiver.MyJPushReceiver filter 41716be0
+
+Service Resolver Table:
+  Non-Data Actions:
+      cn.jpush.android.intent.REGISTER:
+        41e069e8 xianglesong.com.twandroid/cn.jpush.android.service.PushService filter 41e54628
+      cn.jpush.android.intent.PushService:
+        41e069e8 xianglesong.com.twandroid/cn.jpush.android.service.PushService filter 41e54628
+      cn.jpush.android.intent.PUSH_TIME:
+        41e069e8 xianglesong.com.twandroid/cn.jpush.android.service.PushService filter 41e54628
+      cn.jpush.android.intent.DaemonService:
+        422e3398 xianglesong.com.twandroid/cn.jpush.android.service.DaemonService filter 42362a90
+      cn.jpush.android.intent.REPORT:
+        41e069e8 xianglesong.com.twandroid/cn.jpush.android.service.PushService filter 41e54628
+ 
+Permissions:
+  Permission [xianglesong.com.twandroid.permission.JPUSH_MESSAGE] (4228bbc0):
+    sourcePackage=xianglesong.com.twandroid
+    uid=10026 gids=[] type=0 prot=2
+    packageSetting=PackageSetting{41e52db8 xianglesong.com.twandroid/10026}
+    perm=Permission{41aa8098 xianglesong.com.twandroid.permission.JPUSH_MESSAGE}
+ 
+Registered ContentProviders:
+  xianglesong.com.twandroid/com.google.android.gms.measurement.AppMeasurementContentProvider:
+    Provider{41a95890 com.google.android.gms.measurement.AppMeasurementContentProvider}
+ 
+ContentProvider Authorities:
+  [xianglesong.com.twandroid.google_measurement_service]:
+    Provider{41a95890 com.google.android.gms.measurement.AppMeasurementContentProvider}
+ 
+Packages:
+  Package [xianglesong.com.twandroid] (41e52db8):
+    userId=10026 gids=[3003, 1015]
+    sharedUser=null
+    pkg=Package{417a0c10 xianglesong.com.twandroid}
+    codePath=/data/app/xianglesong.com.twandroid-1.apk
+    resourcePath=/data/app/xianglesong.com.twandroid-1.apk
+    nativeLibraryPath=/data/data/xianglesong.com.twandroid/lib
+    versionCode=1
+    versionName=0.0.1
+    dataDir=/data/data/xianglesong.com.twandroid
+    targetSdk=22
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2015-11-20 15:08:50
+    firstInstallTime=2015-11-20 12:28:46
+    lastUpdateTime=2015-11-20 15:08:51
+    signatures=PackageSignatures{41a4a4a0 [422837a0]}
+    permissionsFixed=true haveGids=true
+    pkgFlags=0x0 installStatus=1 stopped=false enabled=0
+    enabledComponents:
+      cn.jpush.android.service.AlarmReceiver
+      cn.jpush.android.service.PushReceiver
+    grantedPermissions:
+      android.permission.USE_CREDENTIALS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      xianglesong.com.twandroid.permission.JPUSH_MESSAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_CONTACTS
+      android.permission.GET_ACCOUNTS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.READ_PHONE_STATE
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+      android.permission.READ_PROFILE
+      android.permission.WRITE_SETTINGS
+      android.permission.INTERNET
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.VIBRATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE

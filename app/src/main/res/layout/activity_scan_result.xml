@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.google.zxing.client.android.ScanResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_scan_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#000000">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="back"
+            android:padding="5dp"
+            android:src="@drawable/top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/scan_result_title"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_scan_result_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_scan_title"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/custom_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/activity_scan_title" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/activity_scan_result_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/scan_result_text_shape"
+        android:gravity="center_horizontal"
+        android:padding="3dp"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/activity_scan_result_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_scan_title"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/activity_scan_result_error_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/scan_uri_error" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_scan_result_error_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/scan_result_uri_error"
+            android:textColor="@color/lighter_gray"
+            android:textSize="28sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
